@@ -35,6 +35,7 @@ The card can be configured via the UI editor. YAML options:
 | `active_color` | string | `#ffb300` | Color of the lit letters |
 | `inactive_color` | string | theme-based | Color of the dimmed letters |
 | `background` | string | theme-based | Card background color |
+| `minute_dots` | boolean | `true` | Show 4 corner dots indicating +1…+4 minutes past the displayed 5-minute step |
 
 Example:
 

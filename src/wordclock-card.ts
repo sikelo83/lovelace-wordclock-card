@@ -9,6 +9,7 @@ const LAYOUTS: Record<Language, Layout> = { de, ch, en };
 const DEFAULT_CONFIG: Partial<WordClockConfig> = {
   language: 'de',
   active_color: '#ffb300',
+  minute_dots: true,
 };
 
 @customElement('wordclock-card')

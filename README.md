@@ -8,6 +8,8 @@ Inspired by [WordClockBerndeutsch](https://github.com/manuelmeister/WordClockBer
 by Manuel Meister — this card reuses its Bärndütsch letter grid idea and time-to-words
 logic as a pure frontend card.
 
+![WordClock Card showing "ES ISCH ZÄÄ AB ZÄNI" (10:12) in Swiss German](wordclock_ch.png)
+
 > **Status: Work in progress** — not yet released.
 
 ## Installation

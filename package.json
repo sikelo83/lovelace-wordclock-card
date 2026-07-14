@@ -1,6 +1,6 @@
 {
   "name": "lovelace-wordclock-card",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Word clock card for Home Assistant with German, Swiss German (Bärndütsch) and English layouts. HACS compatible.",
   "license": "MIT",
   "repository": {

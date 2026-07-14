@@ -10,8 +10,6 @@ logic as a pure frontend card.
 
 ![WordClock Card showing "ES ISCH ZÄÄ AB ZÄNI" (10:12) in Swiss German](wordclock_ch.png)
 
-> **Status: Work in progress** — not yet released.
-
 ## Installation
 
 ### HACS (recommended)
@@ -20,6 +18,10 @@ logic as a pure frontend card.
    (category: *Dashboard*)
 2. Install **WordClock Card**
 3. Reload your browser
+
+> Inclusion in the HACS default store has been requested
+> ([hacs/default#9171](https://github.com/hacs/default/pull/9171)) — once merged,
+> the card can be installed directly from HACS without adding a custom repository.
 
 ### Manual
 

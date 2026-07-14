@@ -6,6 +6,7 @@ import { minuteDots } from './layouts/common';
 import { de } from './layouts/de';
 import { ch } from './layouts/ch';
 import { en } from './layouts/en';
+import './wordclock-card-editor';
 
 const LAYOUTS: Record<Language, Layout> = { de, ch, en };
 const DEFAULT_CONFIG: Partial<WordClockConfig> = {
@@ -37,6 +38,10 @@ export class WordClockCard extends LitElement {
 
   public static getStubConfig(): Partial<WordClockConfig> {
     return { ...DEFAULT_CONFIG };
+  }
+
+  public static getConfigElement(): HTMLElement {
+    return document.createElement('wordclock-card-editor');
   }
 
   public override connectedCallback(): void {

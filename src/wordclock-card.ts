@@ -89,6 +89,7 @@ export class WordClockCard extends LitElement {
     return html`
       <ha-card style=${styles}>
         <div class="frame">
+          <div class="inner">
           ${this._config.minute_dots
             ? html`
                 <span class="dot tl ${dots >= 1 ? 'on' : ''}"></span>
@@ -107,6 +108,7 @@ export class WordClockCard extends LitElement {
                 `,
               ),
             )}
+            </div>
           </div>
         </div>
       </ha-card>
@@ -121,13 +123,21 @@ export class WordClockCard extends LitElement {
 
   static override styles = css`
     ha-card {
-      container-type: inline-size;
       overflow: hidden;
+      display: flex;
+      justify-content: center;
     }
+    /* Square clock, capped by viewport height so wide/panel views never clip it. */
     .frame {
+      container-type: inline-size;
+      width: min(100%, calc(100vh - 130px));
+      width: min(100%, calc(100dvh - 130px));
+      aspect-ratio: 1;
+    }
+    .inner {
       position: relative;
       width: 100%;
-      aspect-ratio: 1;
+      height: 100%;
       padding: 7cqw;
       box-sizing: border-box;
     }
